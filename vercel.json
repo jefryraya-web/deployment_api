@@ -2,17 +2,13 @@
   "version": 2,
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/index.php"
-    },
-    {
       "src": "/(?!api).*",
       "dest": "/public/index.html",
       "check": true
     },
     {
       "src": "/(.*)",
-      "dest": "/router.php"
+      "dest": "/public/index.html"
     }
   ]
 }
