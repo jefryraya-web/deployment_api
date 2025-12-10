@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD PHP API - Dashboard</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo"> Item Manager</h1>
+                <p class="subtitle">Kelola data Anda dengan mudah</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Form Section -->
+            <section class="form-section">
+                <div class="form-card">
+                    <h2 id="form-title" class="form-heading">➕ Tambah Item Baru</h2>
+                    <form id="item-form">
+                        <input type="hidden" id="item-id">
+                        
+                        <div class="form-group">
+                            <label for="title">Judul *</label>
+                            <input 
+                                type="text" 
+                                id="title" 
+                                class="form-input" 
+                                placeholder="Masukkan judul item" 
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="content">Konten</label>
+                            <textarea 
+                                id="content" 
+                                class="form-textarea" 
+                                placeholder="Masukkan deskripsi item..." 
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary"> Simpan</button>
+                            <button type="button" id="cancel-btn" class="btn btn-secondary"> Batal</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- List Section -->
+            <section class="list-section">
+                <div class="list-header">
+                    <h2> Daftar Item</h2>
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            id="search-input" 
+                            class="search-input" 
+                            placeholder="Cari item..."
+                        >
+                    </div>
+                </div>
+
+                <div id="items-container" class="items-grid">
+                    <div class="loading"> Memuat data...</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Item Manager | Built with PHP + SQLite</p>
+        </footer>
+    </div>
+
+    <script src="/public/app.js"></script>
+</body>
+</html>

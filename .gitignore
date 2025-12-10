@@ -1,0 +1,27 @@
+# Log files
+*.log
+error.log
+
+# Database files (jika pakai SQLite)
+*.sqlite
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Local environment files
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+composer.lock
+
+# Vercel
+.vercel/
