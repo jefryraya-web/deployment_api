@@ -2,7 +2,11 @@
   "version": 2,
   "routes": [
     {
-      "src": "/(?!api).*",
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(?!public).*",
       "dest": "/public/index.html",
       "check": true
     },
