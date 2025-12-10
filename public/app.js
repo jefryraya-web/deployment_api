@@ -1,4 +1,4 @@
-﻿const API_BASE = "/api/items";
+﻿const API_BASE = "https://deploymentapi-production.up.railway.app/api/items";
 let allItems = [];
 
 // Fungsi dasar untuk API call
